@@ -1,0 +1,25 @@
+ARN format/pattern for some AWS resources
+
+S3 resources link to ARN : https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazons3.html#amazons3-resources-for-iam-policies
+
+S3 accesspoint : arn:${Partition}:s3:${Region}:${Account}:accesspoint/${AccessPointName}
+S3 bucket : arn:${Partition}:s3:::${BucketName}
+S3 storagelensgroup : arn:${Partition}:s3:${Region}:${Account}:storage-lens-group/${Name}
+S3 object : arn:${Partition}:s3:::${BucketName}/${ObjectName}
+
+
+IAM resources link to ARN: https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsidentityandaccessmanagementiam.html#awsidentityandaccessmanagementiam-resources-for-iam-policies
+
+IAM mfa : arn:${Partition}:iam::${Account}:mfa/${MfaTokenIdWithPath}
+IAM role : arn:${Partition}:iam::${Account}:role/${RoleNameWithPath}
+IAM user : arn:${Partition}:iam::${Account}:user/${UserNameWithPath}
+
+
+EC2 resources link to ARN : https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html#amazonec2-resources-for-iam-policies
+
+EC2 elastic-ip : arn:${Partition}:ec2:${Region}:${Account}:elastic-ip/${AllocationId}
+EC2 fleet : arn:${Partition}:ec2:${Region}:${Account}:fleet/${FleetId}
+EC2 instance : arn:${Partition}:ec2:${Region}:${Account}:instance/${InstanceId}
+EC2  image: arn:${Partition}:ec2:${Region}::image/${ImageId}
+
+
